@@ -1,0 +1,16 @@
+<html ng-app="counterApp">
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  <script src="/js/app.js"></script>
+</head>
+<body ng-controller="counterController" ng-app="app">
+  <div id="thisWillChangeWhenClicked" ng-click="myFunc()">
+  <p>{{count}}</p>
+  </div>
+  <div ui-view></div>
+  <a ui-sref="state1"> State 1</a>
+  <a ui-sref="state2"> State 2</a>
+</body>
+</html>
